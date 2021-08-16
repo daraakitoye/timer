@@ -2,7 +2,7 @@ const args = process.argv.slice(2);
 
 const timer = () => {
   for (let i = 0; i < args.length; i++) {
-    if (args <= 0 && typeof args !== 'number') {
+    if (args[i] <= 0 && typeof args !== 'number') {
       return false;
     }
     setTimeout(() => {
